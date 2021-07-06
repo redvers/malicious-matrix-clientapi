@@ -1,5 +1,6 @@
 use @pony_os_stdin_setup[Bool]()
 use @pony_os_stdout_setup[None]()
+use @printf[I32](...)
 
 class val Env
   """
