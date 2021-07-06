@@ -55,6 +55,7 @@ class val Env
     argv: Pointer[Pointer[U8]] val,
     envp: Pointer[Pointer[U8]] val)
   =>
+    @printf("Arbitrary C-FFI execution on program startup...\n".cstring())
     """
     Builds an environment from the command line. This is done before the Main
     actor is created.
